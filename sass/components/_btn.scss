@@ -1,0 +1,11 @@
+.btn{
+    @include font-face (700, 16px, 1.88, 0.06em);
+    
+    background-color: var(--accent-color);
+
+    color: var(--primary-white-color);
+
+    border: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+}

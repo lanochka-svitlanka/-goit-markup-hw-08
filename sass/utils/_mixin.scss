@@ -1,0 +1,15 @@
+@mixin font-face ($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    letter-spacing: $ls;
+    
+}
+
+@mixin flex ($display, $jc, $ai) {
+    display: $display;
+    justify-content: $jc;
+    align-items: $ai;
+    
+}
+

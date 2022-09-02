@@ -1,0 +1,29 @@
+.logo {
+    @include font-face (700, 24px, 1.17, 0.03em);
+
+    @media screen and (min-width: 1200px){
+    @include font-face (700, 26px, 1.19, 0.03em);}
+
+    
+    font-family: Raleway;
+        
+    color: var(--accent-color)
+}
+
+.logo--black {
+    color: #000000;
+}
+
+.logo--white {
+    color: var(--primary-white-color);
+}
+
+.logo-secondary {
+    display: block;
+   
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px){
+    text-align: center;
+    }
+}

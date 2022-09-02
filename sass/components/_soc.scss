@@ -1,0 +1,38 @@
+.soc-list{
+  @include flex (flex, center, center);  
+}
+
+.soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--primary-white-color);
+        
+    @include flex (flex, center, center);
+    
+    transition: background-color 250ms var(--timing-function);
+}
+
+.soc-list__link {
+    @include flex (flex, center, null);
+
+    gap: 10px;
+
+    background-color: var(--primary-white-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+
+.soc-list__link-icon {
+    fill: #AFB1B8;
+    transition: fill 250ms var(--timing-function);
+
+    .soc-list__link:hover &,
+    .soc-list__link:focus & {
+        fill: var(--primary-white-color);
+    }
+}
