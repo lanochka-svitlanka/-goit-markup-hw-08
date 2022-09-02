@@ -46,13 +46,17 @@
             +38 096 111 11 11</a>
         </li>
     </ul>
-    <button type="button" class="menu-button  is-open" aria-expanded="false" data-menu-button>
+    <button type="button" class="menu-button  js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg width="40" height="40" aria-label="Перемикач мобільного меню">
              <use  class="icon-nav-menu" href="./images/icons.svg#icon-nav-menu"></use>
-             <use  class="icon-nav-close" href="./images/icons.svg#icon-nav-close"></use>
         </svg>
     </button>
-    <div class="mob-container is-open">
+    <div class="mob-container is-menu-container is-open" id="mobile-menu" >
+        <button type="button" class="menu-button  js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                <use class="icon-nav-close" href="./images/icons.svg#icon-nav-close"></use>
+            </svg>
+        </button>
         <nav class="mob-nav">
         <ul class="mob-site-nav-list">
             <li class="mob-site-nav-list__item">
@@ -198,7 +202,7 @@
                 <source srcset="./images/team1m.jpg 1x, ./images/team1m-2x.jpg 2x" media="(max-width: 767px)"/>
                 <img class="team__item-img" 
                 srcset="./images/team1m.jpg 1x, ./images/team1m-2x.jpg 2x"
-                src="./images/team1m.jpg 1x" alt="Чоловік в окулярах та коричневій сорочці"/>
+                src="./images/team1m.jpg" alt="Чоловік в окулярах та коричневій сорочці"/>
             </picture>
             <div class="team__card-wrap">
             <h3 class="team__item-title">Ігор Дем'яненко</h3>
@@ -232,15 +236,15 @@
                 </svg>
                 </a>
                 </li>
-        </li>
-    </ul>        
+        </ul>        
     </div>
+        </li>
         <li  class="team__item">
             <picture>
                 <source srcset="./images/team2d.jpg 1x, ./images/team2d-2x.jpg 2x" media="(min-width: 1200px)" />
                 <source srcset="./images/team2t.jpg 1x, ./images/team2t-2x 2x" media="(min-width: 768px)" />
                 <source srcset="./images/team2m.jpg 1x, ./images/team2m-2x 2x" media="(max-width: 767px)" />
-                <img class="team__item-img" srcset="./images/team2m.jpg 1x, ./images/team2m-2x.jpg 2x" src="./images/team2m.jpg 1x"
+                <img class="team__item-img" srcset="./images/team2m.jpg 1x, ./images/team2m-2x.jpg 2x" src="./images/team2m.jpg"
                  alt="Жінка в окулярах і чорному піджаку" />
             </picture>
             <div class="team__card-wrap">
@@ -275,15 +279,15 @@
                 </svg>
                 </a>
                 </li>
-        </li>
-    </ul>
+        </ul>
     </div>
+    </li>
         <li  class="team__item">
             <picture>
                 <source srcset="./images/team3d.jpg 1x, ./images/team3d-2x.jpg 2x" media="(min-width: 1200px)" />
                 <source srcset="./images/team3t.jpg 1x, ./images/team3t-2x 2x" media="(min-width: 768px)" />
                 <source srcset="./images/team3m.jpg 1x, ./images/team3m-2x 2x" media="(max-width: 767px)" />
-                <img class="team__item-img" srcset="./images/team3m.jpg 1x, ./images/team3m-2x.jpg 2x" src="./images/team3m.jpg 1x"
+                <img class="team__item-img" srcset="./images/team3m.jpg 1x, ./images/team3m-2x.jpg 2x" src="./images/team3m.jpg"
                     alt="Чоловік у білій сорочці" />
             </picture>
             <div class="team__card-wrap">
@@ -318,15 +322,15 @@
                 </svg>
                 </a>
                 </li>
-        </li>
     </ul>
-    <div>
+    </div>>
+        </li>
         <li  class="team__item">
             <picture>
                 <source srcset="./images/team4d.jpg 1x, ./images/team4d-2x.jpg 2x" media="(min-width: 1200px)" />
                 <source srcset="./images/team4t.jpg 1x, ./images/team4t-2x 2x" media="(min-width: 768px)" />
                 <source srcset="./images/team4m.jpg 1x, ./images/team4m-2x 2x" media="(max-width: 767px)" />
-                <img class="team__item-img" srcset="./images/team4m.jpg 1x, ./images/team4m-2x.jpg 2x" src="./images/team4m.jpg 1x"
+                <img class="team__item-img" srcset="./images/team4m.jpg 1x, ./images/team4m-2x.jpg 2x" src="./images/team4m.jpg"
                     alt="Чоловік в окулярах та чорній футболці" />
             </picture>
             <div class="team__card-wrap">
@@ -534,6 +538,9 @@
         </div>
     </div>
 <script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
