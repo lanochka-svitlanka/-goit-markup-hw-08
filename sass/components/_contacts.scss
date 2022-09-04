@@ -1,6 +1,7 @@
 .contacts-list {
     @media screen and (min-width: 767px){
-    display: flex;}
+    display: flex;
+}
 }
 
 .contacts-list__item:not(:last-child) {
