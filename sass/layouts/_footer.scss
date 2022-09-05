@@ -105,6 +105,10 @@
    
 }
 
+.soc-icon-footer{
+fill: var(--primary-white-color);
+}
+
 .subscribe__field {
     @media screen and (min-width: 1200px){
     @include flex (flex, null, baseline);}

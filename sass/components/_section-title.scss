@@ -1,5 +1,10 @@
 .section-title {
-    @include font-face (700, 36px, 1.17, 0.03em);
+    @include font-face (700, 28px, 1.18, 0.03em);
+
+    @media screen and (min-width: 1200px){
+    @include font-face (700, 36px, 1.17, 0.03em);}
+
+
     
     text-align: center;
     
