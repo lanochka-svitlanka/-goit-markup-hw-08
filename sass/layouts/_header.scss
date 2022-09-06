@@ -70,8 +70,17 @@
 
     transform: translateX(100%);
     transition: transform var(--timing-function);
+}
  
- }
+
+ .mob-menu .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: auto;
+}
+ 
  
 .mob-menu.is-open{
    transform: translateX(0);}
@@ -97,10 +106,6 @@
     .menu-close-btn:focus & {
         fill: var(--accent-color)
     }
-}
-
-.mob-site-nav-list{
-    margin-bottom: 306px;
 }
 
 .mob-site-nav-list__item{
