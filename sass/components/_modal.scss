@@ -1,6 +1,10 @@
 
 .modal {
     position: absolute;
+
+    @media screen and (max-width: 479px) {
+    min-width: 90%;
+    }
    
     min-width: 450px;
     min-height: 609px;
@@ -18,7 +22,7 @@
     .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
     }
-
+   
     @media screen and (min-width: 1200px){
     min-width: 528px;
     min-height: 581px;}

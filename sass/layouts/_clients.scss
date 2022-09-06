@@ -11,7 +11,7 @@
 }
 
 .clients-list__item{
-    width: 100%;
+    
     @media screen and (max-width: 767px){
     width: calc((100% - 30px)/2);
 }
@@ -25,7 +25,7 @@
     height: 92px;
 
     @media screen and (max-width: 767px){
-    width: 210px;}
+    width: 100%;}
 
     @media screen and (min-width: 768px) {
     width: 226px;}
