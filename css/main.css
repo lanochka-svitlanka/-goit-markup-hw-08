@@ -125,7 +125,7 @@ img {
 }
 
 .mob-menu.is-open {
-  transform: translateX(0);
+  transform: translateX(0%);
 }
 
 .menu-close-btn {
@@ -304,10 +304,11 @@ img {
   margin-right: 50px;
 }
 
-.contacts-list__item:first-child {
-  margin-bottom: 10px;
+@media screen and (max-width: 1199px) {
+  .contacts-list__item:first-child {
+    margin-bottom: 10px;
+  }
 }
-
 .contacts-list__link {
   display: flex;
   align-items: center;

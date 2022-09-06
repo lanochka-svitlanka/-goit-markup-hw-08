@@ -8,9 +8,11 @@
     margin-right: 50px;
 }
 
-.contacts-list__item{
-    &:first-child {
-    margin-bottom:10px;}
+@media screen and (max-width: 1199px){
+.contacts-list__item {
+&:first-child {
+margin-bottom: 10px;}
+}
 }
 
 .contacts-list__link {
